@@ -1,0 +1,61 @@
+/*=========================================
+global html tag, class and id. Use for any components 
+=========================================*/
+
+
+// global html tag style:-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+// global id style
+#id-1{
+    background-color: red;
+}
+
+
+
+
+// global class style:-
+.class-1{
+    background-color: blue;
+}
+
+
+
+
+
+// global @media query. Use for mobile responsive
+@media (max-width:1200px) {
+    .class-1{
+        background-color: yellow;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
