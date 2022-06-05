@@ -28,11 +28,12 @@
 
 .icons a i{
     color: #fff;
-    font: 18px;
+    font-size: 18px;
     padding: 0px 6px;
+    transition:all .2s ease-in-out;
 }
-.icons a:hover{
-    color: #fff;
+.icons a i:hover{
+    color:   #17c6aa;
 }
 
 .text-animation{
@@ -46,7 +47,8 @@
     font-size: 19px;
 }
 
-.text-animation{
+.text-animation span{
+    color:#17c6aa;
 
 }
 
@@ -66,14 +68,24 @@
     padding: 0px 10px;
     font-size: 13px;
     font-weight: 200;
+    transition:all .2s ease-in-out;
 }
-
-
 
 .collect-info ul li a .lar{
     padding: 0px 6px 0px 0px;
-    font-size: 18px;
+    font-size: 17px;
 }
+
+.collect-info ul li a i{
+    color: #fff;
+}
+
+.collect-info ul li a:hover{
+    color:#17c6aa;
+
+}
+
+
 
 
 .section-one-child {
