@@ -1,11 +1,12 @@
 <section class="section-one">
+    <!-- slider image -->
     <div class="section-one-slide-img">
         <div class="slide-img">
             <img src="../../../assets/banner/banner1.webp" alt="">
         </div>
         <div class="slide-info">
             <div class="infos">
-                <div class="info">
+                <div class="slider-info">
                     <h2>$799</h2>
                     <div class="ear">Ear phones</div>
                     <h3>Enjoy with superb portability</h3>
@@ -17,6 +18,8 @@
     </div>
 
     <div class="section-one-child">
+
+        <!-- services card -->
         <div class="services">
             <div class="service">
                 <div class="service-icon">
@@ -54,6 +57,361 @@
                 </div>
             </div>
         </div>
+
+        <!-- product one cards -->
+        <div class="product-one-cards">
+            <div class="cards-one">
+                <!-- card one -->
+                <ng-container *ngFor="let card_one of cards_one">
+                    <div class="card-one">
+                        <img src="{{card_one.image}}" alt="">
+                        <div class="card-one-info">
+                            <h4>
+                                {{card_one.value}}
+                            </h4>
+                        </div>
+                    </div>
+                </ng-container>
+            </div>
+        </div>
+
+        <br><br>
+
+        <!-- product two cards start -->
+        <div class="product-two-cards">
+            <h2 class="home-title">NEW ARRIVALS</h2>
+            <div class="cards-two">
+
+                <!-- product two - card - 1 -->
+                <div class="card-two">
+                    <div class="card-two-img">
+                        <div class="percent color-red">
+                            <span>-10%</span>
+                        </div>
+                        <img src="../../../assets/products-two/product-01-1.webp" alt="">
+                        <div class="hart-eye-icon">
+                            <a class="heart"><i class="lar la-heart"></i></a>
+                            <a>
+                                <span>Quick View</span>
+                                <i class="lar la-eye"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-two-infos">
+                        <div class=" product-info">
+                            <div class="rating-name">
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="product-name">
+                                    <h3> <a class="pro-name" href="#">iPhone X</a></h3>
+                                </div>
+                            </div>
+
+                            <div class="price-and-btn">
+                                <p>
+                                    <span><del>$200</del></span>
+                                    <span class="current-price">$180</span>
+                                </p>
+                                <a class="cart-btn" href="#">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- product two - card - 2 -->
+                <div class="card-two">
+                    <div class="card-two-img">
+                        <div class="percent color-blue">
+                            <span>New</span>
+                        </div>
+                        <img src="../../../assets/products-two/product-02-1.webp" alt="">
+                        <div class="hart-eye-icon">
+                            <a class="heart"><i class="lar la-heart"></i></a>
+                            <a>
+                                <span>Quick View</span>
+                                <i class="lar la-eye"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-two-infos">
+                        <div class=" product-info">
+                            <div class="rating-name">
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="product-name">
+                                    <h3> <a class="pro-name" href="#">iPhone X</a></h3>
+                                </div>
+                            </div>
+
+                            <div class="price-and-btn">
+                                <p>
+                                    <span><del>$200</del></span>
+                                    <span class="current-price">$180</span>
+                                </p>
+                                <a class="cart-btn" href="#">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- product two - card - 3 -->
+                <div class="card-two">
+                    <div class="card-two-img">
+                        <!-- <div class="percent color-blue">
+                            <span>New</span>
+                        </div> -->
+                        <img src="../../../assets/products-two/product-03-1.webp" alt="">
+                        <div class="hart-eye-icon">
+                            <a class="heart"><i class="lar la-heart"></i></a>
+                            <a>
+                                <span>Quick View</span>
+                                <i class="lar la-eye"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-two-infos">
+                        <div class=" product-info">
+                            <div class="rating-name">
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="product-name">
+                                    <h3> <a class="pro-name" href="#">iPhone X</a></h3>
+                                </div>
+                            </div>
+
+                            <div class="price-and-btn">
+                                <p>
+                                    <span><del>$200</del></span>
+                                    <span class="current-price">$180</span>
+                                </p>
+                                <a class="cart-btn" href="#">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- product two - card - 4 -->
+                <div class="card-two">
+                    <div class="card-two-img">
+                        <div class="percent color-red">
+                            <span>-50%</span>
+                        </div>
+                        <img src="../../../assets/products-two/product-04-1.webp" alt="">
+                        <div class="hart-eye-icon">
+                            <a class="heart"><i class="lar la-heart"></i></a>
+                            <a>
+                                <span>Quick View</span>
+                                <i class="lar la-eye"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-two-infos">
+                        <div class=" product-info">
+                            <div class="rating-name">
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="product-name">
+                                    <h3> <a class="pro-name" href="#">iPhone X</a></h3>
+                                </div>
+                            </div>
+
+                            <div class="price-and-btn">
+                                <p>
+                                    <span><del>$200</del></span>
+                                    <span class="current-price">$180</span>
+                                </p>
+                                <a class="cart-btn" href="#">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- product two - card - 5 -->
+                <div class="card-two">
+                    <div class="card-two-img">
+                        <!-- <div class="percent color-blue">
+                            <span>New</span>
+                        </div> -->
+                        <img src="../../../assets/products-two/product-05-1.webp" alt="">
+                        <div class="hart-eye-icon">
+                            <a class="heart"><i class="lar la-heart"></i></a>
+                            <a>
+                                <span>Quick View</span>
+                                <i class="lar la-eye"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-two-infos">
+                        <div class=" product-info">
+                            <div class="rating-name">
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="product-name">
+                                    <h3> <a class="pro-name" href="#">iPhone X</a></h3>
+                                </div>
+                            </div>
+
+                            <div class="price-and-btn">
+                                <p>
+                                    <span><del>$200</del></span>
+                                    <span class="current-price">$180</span>
+                                </p>
+                                <a class="cart-btn" href="#">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- product two - card - 6 -->
+                <div class="card-two">
+                    <div class="card-two-img">
+                        <div class="percent color-red">
+                            <span>-10%</span>
+                        </div>
+                        <img src="../../../assets/products-two/product-06-1.webp" alt="">
+                        <div class="hart-eye-icon">
+                            <a class="heart"><i class="lar la-heart"></i></a>
+                            <a>
+                                <span>Quick View</span>
+                                <i class="lar la-eye"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-two-infos">
+                        <div class=" product-info">
+                            <div class="rating-name">
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="product-name">
+                                    <h3> <a class="pro-name" href="#">iPhone X</a></h3>
+                                </div>
+                            </div>
+
+                            <div class="price-and-btn">
+                                <p>
+                                    <span><del>$200</del></span>
+                                    <span class="current-price">$180</span>
+                                </p>
+                                <a class="cart-btn" href="#">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br><br>
+
+        <!-- swiper slider -->
+        <div class="all-partners">
+            <h2 class="home-title">Our Partners</h2>
+            <div class="partners">
+                <ng-container *ngFor="let partner of partners">
+                    <div class="one">
+                        <img src="{{partner.partnerImage}}" alt="">
+                    </div>
+                </ng-container>
+            </div>
+        </div>
+
+        <br><br>
+        <!-- featured products -->
+        <div class="product-three-cards">
+            <h2 class="home-title">Featured products</h2>
+            <div class="cards-three">
+                <!-- product two - card - 1 -->
+                <div class="card-three">
+                    <div class="card-three-img">
+                        <div class="featured-percent featured-color-red">
+                            <span>-10%
+                                Sale
+                            </span>
+                        </div>
+                        <img src="../../../assets/featured-product/product-07-2.webp" alt="">
+                        <div class="featured-hart-eye-icon">
+                            <a class="featured-heart"><i class="lar la-heart"></i></a>
+                            <a>
+                                <span>Quick View</span>
+                                <i class="lar la-eye"></i>
+                            </a>
+                        </div>
+                        <div class="featured-image-changes">
+                            <a class="featured-heart">
+                                <img src="../../../assets/featured-product/product-07-2.webp" alt="">
+                                <span>Color name</span>
+                            </a>
+                            <a>
+                                <img src="../../../assets/featured-product/product-07-2 (1).webp" alt="">
+                                <span>Color name</span>
+
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="product-three-infos">
+                        <div class=" featured-product-info">
+                            <div class="featured-rating-name">
+                                <div class="featured-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="featured-product-name">
+                                    <p class="foxic">FOXic</p>
+                                    <h3> <a class="featured-pro-name" href="#">Window Air Conditioner</a></h3>
+                                </div>
+                            </div>
+
+                            <div class="featured-price-and-btns">
+                                <div class="featured-price-btn">
+                                    <p>
+                                        <span><del>$200</del></span>
+                                        <span class="featured-current-price">$180</span>
+                                    </p>
+                                    <a class="featured-cart-btn" href="#">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </div>
+
+
     <br><br><br>
 </section>
