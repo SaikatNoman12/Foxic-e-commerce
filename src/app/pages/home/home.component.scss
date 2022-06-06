@@ -244,6 +244,7 @@ main section start:-
     font-size: 16px;
     font-weight: 600;
 }
+
 // product cards one div end.
 
 
@@ -441,18 +442,19 @@ main section start:-
 
 .product-two-infos .product-info .price-and-btn .cart-btn {
     font-size: 14px;
-    padding: 8px 16px;
+    padding: 10px 16px;
+    border-radius: 4px;
     color: #fff;
     background-color: #5378f4;
     text-transform: uppercase;
     text-decoration: none;
-    border-radius: 5px;
     transition: .3s;
 }
 
 .product-two-infos .product-info .price-and-btn .cart-btn:hover {
     background-color: #212529;
 }
+
 // product cards two div end.
 
 
@@ -478,19 +480,8 @@ main section start:-
     max-width: 100%;
     height: auto;
 }
+
 // partners image slider end.
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // featured products card start:-
@@ -532,7 +523,7 @@ main section start:-
 
 }
 
-.cards-three-img img:hover {
+.card-three-img img:hover {
     transform: scale(1.05);
 }
 
@@ -546,19 +537,24 @@ main section start:-
     display: flex;
     justify-content: center;
     align-items: center;
+    text-transform: uppercase;
     // border-radius: 50%;
     padding: 5px 9px;
-    box-shadow: 0 4px 4px rgb(0 0 0 / 5%);
-    transition: .2s;
+    transition: all .2s !important;
     opacity: 1;
 }
 
 .card-three .card-three-img .featured-color-red {
     background-color: #e32c2b;
+    opacity: 1;
+    box-shadow: 0 4px 4px rgb(0 0 0 / 5%);
+
 }
 
 .card-three .card-three-img .featured-color-blue {
     background-color: #5378f4;
+    opacity: 1;
+    box-shadow: 0 4px 4px rgb(0 0 0 / 5%);
 }
 
 
@@ -639,6 +635,7 @@ main section start:-
     right: 14px;
     opacity: 1;
 }
+
 // featured-hart-eye-icon style end.
 
 
@@ -647,47 +644,53 @@ main section start:-
     font-size: 19px;
     position: absolute;
     z-index: 1111;
-    bottom:0 ;
+    bottom: 0;
     left: -20px;
     opacity: 0;
     transition: all .2s;
 }
 
-.card-three-img .featured-image-changes a{
+.card-three-img .featured-image-changes a {
     display: flex;
     align-items: center;
     position: relative;
 }
-.card-three-img .featured-image-changes span{
+
+.card-three-img .featured-image-changes a span {
     font-size: 10px;
+    font-weight: 500;
+    opacity: 0;
     color: #212529;
     margin-top: 5px;
     padding: 2px 4px;
+    background-color: #fff;
     border: 1px solid #babbbe;
     border-radius: 3px;
     position: relative;
-    margin-left: 12px;
+    left: 0px;
+    margin-left: 6px;
+    visibility: hidden;
+    transform: translateX(30px);
 }
 
-.card-three-img .featured-image-changes span::after{
+.card-three-img .featured-image-changes span::after {
     content: '';
-    width: 8px;
-    height: 8px;
-    // transform: rotateX(45deg);
-    // transform-origin: left right;
+    width: 7px;
+    height: 7px;
     background-color: #fff;
-    border: 1px solid #babbbe;
+    border-top: 1px solid #babbbe;
+    border-left: 1px solid #babbbe;
     position: absolute;
-    top:0;
-    left: -8px;
+    top: 50%;
+    transform: rotate(-45deg) translateY(-70%);
+    left: -1px;
     z-index: 1111;
-    clip-path: polygon(30% 50%, 100% 1%, 100% 100%);
-
 }
 
 
 
-.card-three-img .featured-image-changes a img{
+
+.card-three-img .featured-image-changes a img {
     display: block;
     background-color: #fff;
     overflow: hidden;
@@ -713,19 +716,25 @@ main section start:-
 
 
 .card-three-img .featured-image-changes a:hover img,
-.card-three-img .featured-image-changes a:focus img{
+.card-three-img .featured-image-changes a:focus img {
     border: 1px solid black;
 }
+
+.card-three-img .featured-image-changes a:hover span {
+    transform: translateX(0px);
+    // left: 0px;
+    visibility: visible;
+    transition: all .3s ease;
+    opacity: 1;
+}
+
 
 .card-three:hover .card-three-img .featured-image-changes {
     left: 14px;
     opacity: 1;
 }
+
 // featured-image-changes style end.
-
-
-
-
 
 .card-three:hover .card-three-img .featured-percent {
     opacity: 0;
@@ -748,6 +757,7 @@ main section start:-
     font-size: 13px;
 
 }
+
 .featured-rating-name .featured-product-name h3 a {
     text-decoration: none;
     color: #464b5c;
@@ -763,16 +773,18 @@ main section start:-
 .product-three-infos .featured-product-info .featured-price-and-btns {
     margin-top: 6px;
     overflow: hidden;
+    height: 43px;
+
 }
 
 .product-three-infos .featured-product-info .featured-price-and-btns .featured-price-btn {
-    height: 43px;
     transition: .2s;
     // transform: rotateY(0deg);
     // transform-origin: bottom top;
 }
+
 .card-three:hover .product-three-infos .featured-product-info .featured-price-and-btns .featured-price-btn {
-    transform: translateY(-42px);
+    transform: translateY(-45px);
 
 }
 
@@ -795,17 +807,18 @@ main section start:-
 .product-three-infos .featured-product-info .featured-price-and-btns .featured-price-btn .featured-cart-btn {
     font-size: 14px;
     padding: 8px 16px;
+    border-radius: 5px;
     color: #fff;
     background-color: #5378f4;
     text-transform: uppercase;
     text-decoration: none;
-    border-radius: 5px;
     transition: .3s;
 }
 
 .product-three-infos .featured-product-info .featured-price-and-btns .featured-price-btn .featured-cart-btn:hover {
     background-color: #212529;
 }
+
 // featured products card end.
 
 
