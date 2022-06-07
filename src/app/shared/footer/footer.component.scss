@@ -1,0 +1,198 @@
+footer {
+    width: 100%;
+    background-color: #fff;
+}
+
+.footer {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+.footer-child {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.mt-4 {
+    margin-top: 40px;
+}
+
+.mt-4 h4 {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #282828;
+    font-weight: 600;
+}
+
+.footer-logo {
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo .footer-logo-img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.company-data ul {
+    list-style: none;
+    font-size: 14px;
+}
+
+.company-data ul li+li {
+    color: #282828;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.company-data ul li a {
+    color: #282828;
+    text-decoration: none;
+    transition: .2s;
+}
+
+.company-data ul li a:hover {
+    color: #17c6aa;
+}
+
+.bottom-menu-icons {
+    text-align: left;
+    margin-top: 30px;
+}
+
+.bottom-menu-icons a i {
+    color: #282828;
+    font-size: 18px;
+    padding: 0px 6px;
+    transition: all .2s ease-in-out;
+}
+
+.bottom-menu-icons a i:hover {
+    color: #17c6aa;
+}
+
+
+.pay-icon ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 50px;
+}
+
+.pay-icon ul li a {
+    display: flex;
+    align-items: flex-start;
+}
+
+.pay-icon ul li+li {
+    margin-top: 0px;
+}
+
+.box-cupon-text {
+    text-transform: uppercase;
+    width: 100%;
+    padding: 12px 10px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 36px;
+    position: relative;
+    border: 2px dashed #282828;
+}
+
+.box-cupon-text i {
+    font-size: 28px;
+    background-color: #fff;
+    position: absolute;
+    top: -15px;
+    left: -6px;
+}
+
+.box-cupon-text span {
+    color: #17c6aa;
+}
+
+.copyright {
+    width: 100%;
+    background-color: #f7f7f7;
+    padding: 18px 0px;
+}
+
+.copyright-child {
+    width: 80%;
+    margin: auto;
+}
+
+.copyright-text {
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+    color: #282828;
+}
+
+.copyright-text p a {
+    text-decoration: none;
+    color: #282828;
+    transition: .2s;
+}
+
+.copyright-text p a:hover {
+    color: #17c6aa;
+}
+
+@media (max-width:1200px) {
+    .footer {
+        width: 96%;
+    }
+}
+@media (max-width:992px) {
+    .mt-4 {
+        margin-top: 0px;
+    }
+
+    
+    
+    .footer-child {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+
+}
+@media (max-width:767px) {}
+@media (max-width:556px) {
+    .footer-child {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+        text-align: center;
+    }
+    .child-one, .child-two, .child-three{
+        border-bottom: 2px solid #282828;
+        padding-bottom: 14px;
+    }
+
+    // .child-three{
+    //     border-bottom: 0 ;
+    // }
+
+    .mt-4 h4{
+        font-size: 20px;
+    }
+
+    .footer-logo {
+        justify-content: center;
+    }
+
+    .bottom-menu-icons{
+        text-align: center;
+    }
+
+    .pay-icon ul li a {
+        justify-content: center;
+    }
+
+}
+@media (max-width:360px) {}

@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { PagesRoutingModule } from './pages-routing.module';
 import { PagesComponent } from './pages.component';
 import { CoreModule } from '../core/core.module';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { CoreModule } from '../core/core.module';
   imports: [
     CommonModule,
     PagesRoutingModule,
-    CoreModule
+    CoreModule,
+    SharedModule
   ]
 })
 export class PagesModule { }
