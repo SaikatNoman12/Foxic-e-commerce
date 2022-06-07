@@ -1365,7 +1365,6 @@ main section start:-
 
 .logo-2 {
     text-align: left;
-
 }
 
 .logo-2 .logo-2-img {
@@ -1421,12 +1420,6 @@ main section start:-
         width: 96%;
         margin: auto;
     }
-
-
-    // .menu ul {
-    //     grid-template-columns: repeat(3, 1fr);
-    //     grid-gap: 18px;
-    // }
 }
 
 @media (max-width:992px) {
@@ -1437,7 +1430,7 @@ main section start:-
     }
 
     .logo-2 {
-        justify-content: center;
+        text-align: center;
     }
 
     .bottom-menu-icons {
