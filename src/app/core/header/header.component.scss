@@ -6,82 +6,90 @@
     background-color: $bg-white-1;
 }
 
-.top-header{
-    width:100% ;
+.top-header {
+    width: 100%;
     background-color: #282828;
 }
 
-.top-header-data{
-    width: 80%;
+.top-header-data {
+    width: 90%;
     height: 40px;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     color: #fff;
-    
+
 }
 
 
-.top-header-data .icons, .text-animation, .collect-info{
+.top-header-data .icons,
+.text-animation,
+.collect-info {
     line-height: 40px;
 }
 
-.icons a i{
+.icons a i {
     color: #fff;
     font-size: 18px;
     padding: 0px 6px;
-    transition:all .2s ease-in-out;
-}
-.icons a i:hover{
-    color:   #17c6aa;
+    transition: all .2s ease-in-out;
 }
 
-.text-animation{
+.icons a .febu{
+    padding: 0px 6px 0px 0px !important;
+}
+
+.icons a i:hover {
+    color: #17c6aa;
+}
+
+.text-animation {
     font-size: 15px;
     font-weight: 300;
     padding: 0px 15px;
 }
 
 
-.text-animation i{
+.text-animation i {
     font-size: 19px;
 }
 
-.text-animation span{
-    color:#17c6aa;
+.text-animation span {
+    color: #17c6aa;
 
 }
 
-.collect-info ul{
+.collect-info ul {
     list-style: none;
     display: flex;
     justify-content: end;
 }
-.collect-info ul li{
+
+.collect-info ul li {
     padding: 0px;
 }
 
 
-.collect-info ul li a{
+.collect-info ul li a {
     text-decoration: none;
     color: #fff;
     padding: 0px 10px;
     font-size: 13px;
     font-weight: 200;
-    transition:all .2s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
-.collect-info ul li a .lar{
+.collect-info ul li a .lar {
     padding: 0px 6px 0px 0px;
     font-size: 17px;
 }
 
-.collect-info ul li a i{
+.collect-info ul li a i {
     color: #fff;
 }
 
-.collect-info ul li a:hover{
-    color:#17c6aa;
+.collect-info ul li a:hover {
+    color: #17c6aa;
 
 }
 
@@ -89,7 +97,7 @@
 
 
 .section-one-child {
-    width: 80%;
+    width: 90%;
     height: 100%;
     align-items: center;
     margin: auto;
@@ -126,7 +134,7 @@
 }
 
 .header .header-menu ul,
-.header-searches ul{
+.header-searches ul {
     list-style: none;
     display: flex;
     align-items: center;
@@ -134,7 +142,7 @@
     position: relative;
 }
 
-.header-searches ul{
+.header-searches ul {
     padding: 15px 0px;
 
 }
@@ -146,6 +154,11 @@
     padding: 12px 15px;
     height: 100%;
     position: relative;
+    cursor: pointer;
+}
+
+.shopping-li{
+    padding-right: 10px !important;
 }
 
 .skill_row_percent_view {
@@ -156,12 +169,10 @@
     font-size: 9px;
     padding: 1px 4px 0px;
     font-weight: 400;
-    // transform: translateX(-50%);
     color: $text-color-white-1;
     text-transform: uppercase;
     letter-spacing: 1px;
     border-radius: 3px;
-    // overflow: visible;
 }
 
 .skill_row_percent_view::after {
@@ -212,4 +223,64 @@
 .header .header-menu ul li a,
 .header-searches ul li a {
     text-decoration: none;
+}
+
+.pages a i {
+    font-size: 12px;
+
+}
+
+.pages {
+    position: relative;
+    transition: 0s !important;
+    z-index: 1;
+}
+
+.pages .drop-down {
+    padding-top: 34px;
+    position: absolute;
+    visibility: hidden !important;
+}
+
+.pages .pages-dropdown {
+    padding: 10px 0px 20px 10px !important;
+    display: block !important;
+    box-shadow: 0 0 10px rgba(158, 157, 157, 0.436);
+    top: 0 !important;
+    min-width: 160px;
+    background-color: #fff;
+    transition: all 0s !important;
+}
+
+.pages .pages-dropdown li {
+    padding: 5px 7px 5px 7px !important;
+    font-size: 12px !important;
+    font-weight: 300;
+    position: relative;
+    transition: padding .2s !important;
+}
+
+
+.pages .pages-dropdown li:hover {
+    padding-left: 18px !important;
+    background-color: rgb(225, 224, 224);
+
+}
+
+.pages .pages-dropdown li:hover .header-menu ul li a {
+    color: #282828;
+}
+
+.pages .drop-down .pages-dropdown li+li {
+    margin-top: 6px;
+}
+
+.pages .drop-down .pages-dropdown li a {
+    text-decoration: none;
+    color: #282828;
+    cursor: pointer;
+}
+
+.pages:hover .drop-down {
+    visibility: visible !important;
 }
